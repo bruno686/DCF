@@ -147,17 +147,8 @@ valid_loader = data.DataLoader(valid_dataset,
 print("data loaded! user_num:{}, item_num:{} train_data_len:{} test_user_num:{}".format(user_num, item_num, len(train_data), len(test_data_pos)))
 
 ########################### CREATE MODEL #################################
-if args.model == 'NeuMF-pre': # pre-training. Not used in our work.
-	GMF_model_path = model_path + 'GMF.pth'
-	MLP_model_path = model_path + 'MLP.pth'
-	NeuMF_model_path = model_path + 'NeuMF.pth'
-	assert os.path.exists(GMF_model_path), 'lack of GMF model'
-	assert os.path.exists(MLP_model_path), 'lack of MLP model'
-	GMF_model = torch.load(GMF_model_path)
-	MLP_model = torch.load(MLP_model_path)
-else:
-	GMF_model = None
-	MLP_model = None
+GMF_model = None
+MLP_model = None
 
 if args.model == 'GMF':
     model = model.NCF(user_num, item_num, args.factor_num, args.num_layers, 
