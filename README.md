@@ -18,6 +18,9 @@ The model is implemented using PyTorch. The versions of packages used are shown 
 
 The three data source we use comes from [Adressa](https://github.com/WenjieWWJ/DenoisingRec) , [Yelp](https://github.com/WenjieWWJ/DenoisingRec) and [MovieLens](https://github.com/wangyu-ustc/DeCA).
 
+# Special thanks 
+Very thanks to Dr.Wenjie Wang with his code [DenoisingRec]([https://github.com/WenjieWWJ/DenoisingRec](https://github.com/WenjieWWJ/DenoisingRec)).
+
 # Quick run
 
 ```js
