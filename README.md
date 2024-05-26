@@ -10,9 +10,10 @@ We propose a Double Correction Framework for Denoising Recommendation (DCF), whi
 
 The model is implemented using PyTorch. The versions of packages used are shown below.
 
-- numpy==1.18.0
-- scikit-learn==0.22.1
-- torch==1.6.1
+- numpy==1.19.5
+- scikit-learn==0.24.2
+- torch==1.8.1
+- CUDA==10.2
 
 # Data Preparation
 
@@ -25,4 +26,15 @@ Very thanks to Dr.Wenjie Wang with his code [DenoisingRec](https://github.com/We
 
 ```js
 python main.py
+```
+
+# Citation
+If you find this useful for your research, please kindly cite the following paper:<br>
+```
+@article{he2024double,
+  title={Double Correction Framework for Denoising Recommendation},
+  author={He, Zhuangzhuang and Wang, Yifan and Yang, Yonghui and Sun, Peijie and Wu, Le and Bai, Haoyue and Gong, Jinqi and Hong, Richang and Zhang, Min},
+  journal={arXiv preprint arXiv:2405.11272},
+  year={2024}
+}
 ```
