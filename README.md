@@ -1,6 +1,6 @@
 # Double Correction Framework for Denoising Recommendation
 
-The code and datasets of our paper "Double Correction Framework for Denoising Recommendation"
+The code and datasets of our KDD 2024 paper "Double Correction Framework for Denoising Recommendation"
 
 # Overview
 
