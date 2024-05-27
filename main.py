@@ -213,7 +213,8 @@ def eval(model, valid_loader, best_loss, count):
 def test(model, test_data_pos, user_pos):
 	top_k = args.top_k
 	model.eval()
-	_, recall, NDCG, _ = evaluate.test_all_users(model, 4096, item_num, test_data_pos, user_pos, top_k)
+	# The second item is too large, and there may be a problem with vacant values in predictions.
+	_, recall, NDCG, _ = evaluate.test_all_users(model, 256, item_num, test_data_pos, user_pos, top_k)
 
 	print("################### TEST ######################")
 	print("Recall {:.4f}-{:.4f}-{:.4f}-{:.4f}".format(recall[0], recall[1], recall[2], recall[3]))
