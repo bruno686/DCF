@@ -17,7 +17,7 @@ import wandb
 import lightgcn
 import evaluate
 import data_utils
-from loss import loss_function, loss_function_co_teaching, PLC, PLC_uncertain, PLC_uncertain_discard
+from loss import loss_function, PLC_uncertain_discard
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 parser = argparse.ArgumentParser()
